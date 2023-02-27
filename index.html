@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyakorlás</title>
+</head>
+<body>
+    <input type="number" name="szam1" id="szam1">
+    <input type="number" name="szam2" id="szam2">
+    <button type="submit" id="button" value="ellenorzes" onclick="">ellenorzes</button>
+    <p id="visszajelzes"></p>
+    
+    <script>
+        const szam1 = document.getElementById("szam1")
+        const szam2 = document.getElementById("szam2")
+        const visszajelzes = document.getElementById("visszajelzes")
+        visszajelzes.innerHTML = nagyobb(szam1,szam2) 
+        function nagyobb(szam1,szam2)
+        {
+            if(szam1>szam2)
+            {
+                return "Az első szám a nagyobb:"+szam1
+            }
+            else if (szam1<szam2)
+            {
+                return "Az második szám a nagyobb:"+szam2
+            }
+            else
+            {
+                return "A két szám egyenlő"
+            }
+        }
+
+    </script>
+</body>
+</html>
